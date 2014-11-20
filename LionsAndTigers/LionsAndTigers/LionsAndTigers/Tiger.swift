@@ -27,7 +27,7 @@ struct Tiger {
         }
     }
     
-    func chuffANumberOfTimes (numberOfTimes: Int, isLoud:Bool){
+    func chuffANumberOfTimes(numberOfTimes: Int, isLoud:Bool){
         for var chuffTimes = 1; chuffTimes <= numberOfTimes; chuffTimes++ {
             if isLoud {
                 chuff()
