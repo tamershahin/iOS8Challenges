@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         cell.taskLabel.text = taskArray[indexPath.row].task
         cell.descriptionLabel.text = taskArray[indexPath.row].subTask
-        cell.dateLabel.text =  Date.toString(date: taskArray[indexPath.row].date) 
+        cell.dateLabel.text =  Date.toString(date: taskArray[indexPath.row].date)
         return cell
     }
 
@@ -66,6 +66,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         println(indexPath.row)
         performSegueWithIdentifier("showTaskDetail", sender: self)
+    }
+
+    @IBAction func addButtonTapped(sender: UIBarButtonItem) {
+        
+        self.performSegueWithIdentifier("showTaskAdd", sender: self)
+        
     }
 }
 

@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="d8I-6p-Dkz" customClass="TaskCell" customModule="TaskIt" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="myCell" rowHeight="75" id="d8I-6p-Dkz" customClass="TaskCell" customModule="TaskIt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d8I-6p-Dkz" id="hj6-sN-Zv2">
@@ -63,12 +63,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="WJa-Ji-08I">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fG3-ak-JEK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fG3-ak-JEK">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="BYZ-38-t0r" id="hIB-r7-iCt"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="8Bo-36-DID" id="aIU-zS-5iX"/>
                         <segue destination="fXz-mf-DUb" kind="show" identifier="showTaskDetail" id="PJ6-Yh-c1M"/>
-                        <segue destination="LB1-Th-GhE" kind="presentation" id="B6X-NQ-XJ8"/>
+                        <segue destination="LB1-Th-GhE" kind="presentation" identifier="showTaskAdd" id="B6X-NQ-XJ8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
