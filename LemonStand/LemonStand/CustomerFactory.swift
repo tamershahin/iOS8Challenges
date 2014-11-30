@@ -11,10 +11,10 @@ import Foundation
 class CustomerFactory {
 
     class func createCustomers(number:Int) -> [Customer] {
-        var randomNumber:Float = Float(arc4random()) /  Float(UInt32.max)
 
         var customers:[Customer] = []
         for (var i = 0 ; i<=number; i++){
+            var randomNumber:Float = Float(arc4random()) /  Float(UInt32.max)
             var customer:Customer = createCustomer(randomNumber)
             customers.append(customer)
         }
