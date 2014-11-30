@@ -45,7 +45,7 @@
 		30D4ADAA1A2B4C0900141173 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		30D4ADAE1A2B9CB500141173 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		30D4ADB01A2BA32300141173 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
-		30D4ADB21A2BA84E00141173 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskDetailViewController.swift; path = TaskIt/TaskDetailViewController.swift; sourceTree = "<group>"; };
+		30D4ADB21A2BA84E00141173 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,6 @@
 		30D4AD7A1A2B404000141173 = {
 			isa = PBXGroup;
 			children = (
-				30D4ADB21A2BA84E00141173 /* TaskDetailViewController.swift */,
 				30D4AD851A2B404000141173 /* TaskIt */,
 				30D4AD9B1A2B404000141173 /* TaskItTests */,
 				30D4AD841A2B404000141173 /* Products */,
@@ -88,6 +87,7 @@
 		30D4AD851A2B404000141173 /* TaskIt */ = {
 			isa = PBXGroup;
 			children = (
+				30D4ADB21A2BA84E00141173 /* TaskDetailViewController.swift */,
 				30D4AD881A2B404000141173 /* AppDelegate.swift */,
 				30D4AD8A1A2B404000141173 /* ViewController.swift */,
 				30D4AD8C1A2B404000141173 /* Main.storyboard */,
